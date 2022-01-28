@@ -6,6 +6,14 @@ describe("Home", () => {
   });
 
   it("should click on 'Add'", () => {
-    cy.get("[date-cy='habit-add']").click();
+    cy.get("[data-cy='habit-add']").click();
   });
+
+  it("should get habit input", () => {
+    cy.get("[data-cy='habit-input']").type("test");
+  });
+
+  // it("should get the add button", () => {
+
+  // })
 });

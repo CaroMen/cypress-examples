@@ -54,6 +54,7 @@ function AddModal({ habits, setHabits }: IProps) {
           <Modal.Body>
             <InputGroup className="mb-3">
               <FormControl
+              data-cy="habit-input"
                 placeholder="Habit"
                 onChange={(e) => {setHabit(e.target.value)}}
                 value={habit}
