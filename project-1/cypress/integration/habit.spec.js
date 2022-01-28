@@ -9,11 +9,11 @@ describe("Home", () => {
     cy.get("[data-cy='habit-add']").click();
   });
 
-  it("should get habit input", () => {
-    cy.get("[data-cy='habit-input']").type("test");
-  });
+  // it("should get habit input", () => {
+  //   cy.get("input");
+  // });
 
-  // it("should get the add button", () => {
-
-  // })
+  // it("should get the save changes button", () => {
+  //   cy.contains("Save Changes").click();
+  // });
 });

@@ -53,8 +53,9 @@ function AddModal({ habits, setHabits }: IProps) {
           </Modal.Header>
           <Modal.Body>
             <InputGroup className="mb-3">
-              <FormControl
-              data-cy="habit-input"
+              <input
+                // className="habit-input"
+                data-cy="habit-input"
                 placeholder="Habit"
                 onChange={(e) => {setHabit(e.target.value)}}
                 value={habit}
@@ -65,7 +66,7 @@ function AddModal({ habits, setHabits }: IProps) {
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>
-            <Button variant="primary" onClick={handleAdd}>
+            <Button variant="primary" onClick={handleAdd} data-cy="save-changes-btn">
               Save Changes
             </Button>
           </Modal.Footer>
