@@ -16,10 +16,10 @@ function Habit() {
     console.log(habits, "habits")
 
     return (
-        <div className="Habit">
+        <div className="Habit" data-cy="habit-container">
             <div className="Habit__heading-container">
                 <h2 className="Habit-header">Habit Checklist</h2>
-                <Modal 
+                <Modal
                     habits={habits}
                     setHabits={setHabits}
                 />
