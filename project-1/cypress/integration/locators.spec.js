@@ -19,5 +19,13 @@ describe("Locators", () => {
     cy.get("[type='submit']");
 
     // Get all elements by tag name and class
+    cy.get("button.Elements-btn");
+
+    // get all elements by tag name, class, and id
+    cy.get("button.Elements-btn#btn-with-id");
+  });
+
+  it("locating elements with contains", () => {
+    cy.contains("Button"); // should fail
   });
 });
